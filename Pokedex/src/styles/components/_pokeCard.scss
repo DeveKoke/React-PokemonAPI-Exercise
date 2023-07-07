@@ -1,0 +1,161 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+article{
+    @include pokeCard;
+
+}
+.card_title_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 3em;
+}
+.card_info_content{
+    display: flex;
+    flex-direction: column;
+    min-height: 12em;
+    justify-content: space-evenly;
+margin-bottom: 10px;
+}
+.poke_type{
+    width: 78%;
+    text-align: center;
+    margin: 13px 0;
+    margin-left: 7px;
+    border-radius: 15px;
+    padding: 0 8px;
+    background-color: rgb(147, 182, 147);
+}
+
+.normal{
+    border-color: $main-white-pink;
+}
+.grass{
+    border-color: $main-green;
+}
+.fire{
+    border-color: $main-fire;
+}
+.water{
+    border-color: $main-dark-blue;
+}
+.electric{
+    border-color: $main-yellow;
+}
+.steel{
+    border-color: $main-steel;
+}
+.ice{
+    border-color: $main-light-blue;
+}
+.ground{
+    border-color: $main-brown;
+}
+.flying{
+    border-color: $main-purple;
+}
+.bug{
+    border-color: $main-oliveGreen;
+}
+.rock{
+    border-color: $main-grey;
+}
+
+.typenormal{
+    background-color: $main-white-pink;
+    color: rgb(69, 69, 69);
+    border: 3px solid $main-white-pink;
+}
+.typegrass{
+    background-color: $main-green;
+    color: rgb(9, 70, 11);
+    border: 3px solid $main-green;
+}
+.typefire{
+    background-color: $main-fire;
+    color: rgb(238, 216, 15);
+    border: 3px solid $main-fire;
+}
+.typewater{
+    background-color: $main-light-blue;
+    color: rgb(233, 225, 225);
+    border: 3px solid $main-light-blue;
+}
+.typeelectric{
+    background-color: $main-yellow;
+    color: rgb(69, 69, 69);
+    border: 3px solid $main-black;
+}
+.typesteel{
+    background-color: $main-steel;
+    color: rgb(235, 215, 215);
+    border: 3px solid $main-steel;
+}
+.typeice{
+    background-color: $main-blue-ice;
+    color: rgb(41, 9, 156);
+    border: 3px solid $main-light-blue;
+}
+.typeflying{
+    background-color: $main-purple;
+    color: rgb(246, 243, 243);
+    border: 3px solid $main-purple;
+}
+.typebug{
+    background-color: $main-oliveGreen;
+    color: rgb(239, 234, 234);
+    border: 3px solid $main-oliveGreen;
+}
+.typerock{
+    background-color: $main-grey;
+    color: rgb(221, 213, 213);
+    border: 3px solid $main-grey;
+}
+.typeground{
+    background-color: $main-brown;
+    color: rgb(221, 213, 213);
+    border: 3px solid $main-brown;
+}
+
+
+.titlenormal{
+    background-color: $main-white-pink;
+}
+.titlegrass{
+    background-color: $main-green;
+}
+.titlefire{
+    background-color: $main-fire;
+    color: rgb(238, 216, 15);
+}
+.titlewater{
+    background-color: $main-light-blue;
+    color: rgb(233, 225, 225);
+}
+.titleelectric{
+    background-color: $main-yellow;
+}
+.titlesteel{
+    background-color: $main-white-pink;
+}
+.titleice{
+    background-color: $main-blue-ice;
+}
+.titleground{
+    background-color: $main-brown;
+    color: rgb(221, 213, 213);
+}
+.titleflying{
+    background-color: $main-purple;
+}
+.titlebug{
+    background-color: $main-oliveGreen;
+    color: rgb(239, 229, 229);
+}
+.titlerock{
+    background-color: $main-grey;
+    color: rgb(245, 233, 233);
+}
