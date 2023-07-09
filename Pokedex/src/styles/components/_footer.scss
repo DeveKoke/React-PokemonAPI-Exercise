@@ -1,0 +1,47 @@
+@import '../utils/variables.scss';
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: $main-red ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: white;
+
+     a{
+        padding: 5px;
+        color: rgb(255, 255, 141);
+     }
+     a:hover{
+        color: rgb(127, 255, 88);
+     }
+     img{
+        max-width: 2.8em;
+        margin: 0 .5em;
+     }
+}
+.followUs{
+    display: flex;
+    flex-direction: column;
+    padding: 1.8em 0;
+}
+.soc-med{
+    display: flex;
+    flex-direction: row;
+    margin: .7em 0;
+}
+
+.comunity, .generalInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 1.8em 0;
+}
+// .generalInfo{
+//     display: flex;
+//     flex-direction: column;
+    
+// }

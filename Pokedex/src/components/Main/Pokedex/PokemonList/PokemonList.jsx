@@ -1,4 +1,4 @@
-import PokeCard from './PokeCard'
+import PokeCard from './PokeCard';
 import { v4 as uuidv4 } from 'uuid';
 
 

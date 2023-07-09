@@ -3,9 +3,9 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 1.5em 0;
+    margin: 2.3em 0;
 }
-.error_search{
+.error_search, .requiredMessage{
     font-size: larger;
     font-weight: bolder;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -13,6 +13,7 @@
     color: white;
     padding: 3px 1em;
     border-radius: 7px;
+    text-align: center;
 }
 .pokedexIcon{
     max-width: 27em;

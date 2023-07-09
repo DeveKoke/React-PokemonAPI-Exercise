@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext} from 'react';
+import { PokeContext } from "../../../context/PokeContext";
 
 import Search from './Search/Search';
 import PokemonList from './PokemonList/PokemonList';
@@ -12,6 +13,7 @@ function Pokedex() {
   const [pokeList, setPokeList]=useState([]);
   const [errorMessage, setErrorMessage] = useState('');
 
+  const newPokemonList = useContext(PokeContext); 
 
   const url = `https://pokeapi.co/api/v2/pokemon/${pokeName}`;
   useEffect(() => {
@@ -22,7 +24,7 @@ function Pokedex() {
         })
         .catch((error) => {
           if ( error.response.status === 404) {
-            setErrorMessage(`Couldn't find any pokemon named "${pokeName}". Please, type a correct name`);
+            setErrorMessage(`Couldn't find any pokemon "${pokeName}". Please, type a correct name`);
             setTimeout(() => {
               setErrorMessage('');
             }, 4000); 
@@ -47,11 +49,16 @@ function Pokedex() {
         move: pokeData.moves[0].move.name
       }
       setPokeList([...pokeList, pokemonInfo])
-
     }
-
   },[pokeData])
 
+
+  useEffect(() => {
+
+    newPokemonList.map(item => setPokeList([...pokeList, item]) )
+
+  }, [newPokemonList])
+console.log(newPokemonList);
 
   const updatePokeName = (pokemon) => {
   setPokeName(pokemon)

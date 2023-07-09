@@ -1,8 +1,17 @@
+import { useState } from "react";
+
 const Search = ({updatePokeName}) => {
+
+  const [inputValue, setInputValue] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    updatePokeName(e.target.pokename.value)
+    updatePokeName(e.target.pokename.value);
+    setInputValue('')
+  }
+
+  const handleChange = (e) => {
+    setInputValue(e.target.value)
   }
 
   return( 
@@ -12,7 +21,7 @@ const Search = ({updatePokeName}) => {
       <img src="./src/assets/pokedex.png" alt="pokedex" className="pokedexIcon" />
         <h2>Find a POKEMON</h2>
         <form onSubmit={handleSubmit}>
-          <input type="text" name="pokename" />
+          <input type="text" name="pokename" value={inputValue} onChange={handleChange}/>
           <input type="submit" value="Search Pokemon" />
         </form>
       </article>

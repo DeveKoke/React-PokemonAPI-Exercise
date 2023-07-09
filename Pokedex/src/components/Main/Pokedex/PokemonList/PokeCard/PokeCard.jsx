@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const PokeCard = ({name, number, img, type, height, weight, move, ability}) => {
 

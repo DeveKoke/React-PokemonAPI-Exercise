@@ -1,14 +1,15 @@
 @import './variables.scss';
 
-@mixin pokeCard{
-    border-radius: 13px;
-    border: solid $main-black 8px;
-    margin: 01em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 15em;
-    // background-color: rgb(236, 222, 205);
-    font-weight: bolder;
+// @mixin pokeCard{
+//     border-radius: 13px;
+//     border: solid $main-black 8px;
+//     margin: 01em;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     box-shadow: 5px 5px 10px;
+//     min-width: 15em;
+//     // background-color: rgb(236, 222, 205);
+//     font-weight: bolder;
 
-}
+// }
