@@ -1,8 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect} from "react";
+import { debounce } from 'lodash';
+
 
 const Search = ({updatePokeName}) => {
 
   const [inputValue, setInputValue] = useState('')
+
+  useEffect(() => {
+    const debouncedChange = debounce(updatePokeName, 1000);
+    debouncedChange(inputValue);
+
+    return () => {
+      debouncedChange.cancel();
+    };
+  }, [inputValue, updatePokeName]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,7 +26,6 @@ const Search = ({updatePokeName}) => {
   }
 
   return( 
-    // <div>
       <article className="findPokemon">
         <h1>POKEDEX</h1>
       <img src="./src/assets/pokedex.png" alt="pokedex" className="pokedexIcon" />
@@ -25,7 +35,6 @@ const Search = ({updatePokeName}) => {
           <input type="submit" value="Search Pokemon" />
         </form>
       </article>
-    // </div>
   );
 };
 

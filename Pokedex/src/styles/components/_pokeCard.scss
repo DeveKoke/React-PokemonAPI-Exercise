@@ -50,7 +50,7 @@ margin-bottom: 10px;
 }
 
 .normal{
-    border-color: $main-white-pink;
+    border-color: $main-normaltype;
 }
 .grass{
     border-color: $main-green;
@@ -85,11 +85,14 @@ margin-bottom: 10px;
 .ghost{
     border-color: $main-ghost-color;
 }
+.fairy{
+    border-color: $secon-white-pink;
+}
 
 .typenormal{
-    background-color: $main-white-pink;
-    color: rgb(69, 69, 69);
-    border: 3px solid $main-white-pink;
+    background-color: $main-normaltype;
+    color: rgb(13, 17, 138);
+    border: 3px solid $main-normaltype;
 }
 .typegrass{
     background-color: $main-green;
@@ -146,13 +149,20 @@ margin-bottom: 10px;
     color: rgb(245, 233, 233);
     border: 3px solid $main-ghost-color;
 }
+.typefairy{
+    background-color: $main-white-pink;
+    color: rgb(122, 24, 152);
+    border: 3px solid $main-white-pink;
+}
 
 
 .titlenormal{
-    background-color: $main-white-pink;
+    background-color:$main-normaltype;
+    color: rgb(13, 17, 138);
 }
 .titlegrass{
     background-color: $main-green;
+    color: rgb(9, 70, 11);
 }
 .titlefire{
     background-color: $main-fire;
@@ -191,5 +201,9 @@ margin-bottom: 10px;
 .titleghost{
     background-color: $second-ghost-color;
     color: rgb(245, 233, 233);
+}
+.titlefairy{
+    background-color: $main-white-pink;
+    color: rgb(122, 24, 152);
 }
 

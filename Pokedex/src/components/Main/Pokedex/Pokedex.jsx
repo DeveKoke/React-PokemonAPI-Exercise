@@ -58,7 +58,6 @@ function Pokedex() {
     newPokemonList.map(item => setPokeList([...pokeList, item]) )
 
   }, [newPokemonList])
-console.log(newPokemonList);
 
   const updatePokeName = (pokemon) => {
   setPokeName(pokemon)

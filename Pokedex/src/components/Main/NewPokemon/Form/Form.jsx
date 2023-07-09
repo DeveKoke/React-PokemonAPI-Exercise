@@ -21,7 +21,6 @@ const Form = ({savePokemon}) => {
       move: move
       // typeTwo: typeTwo, // Si no usas typeTwo, puedes omitirlo o asignar un valor por defecto
     });
-    console.log(data.img);
   };
 
   const handleImageChange = (event) => {
