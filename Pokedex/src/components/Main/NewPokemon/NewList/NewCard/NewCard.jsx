@@ -1,16 +1,14 @@
-import Details from "./Details/Details";
-import { PokeContext } from "../../../../../context/PokeContext";
-import { useContext, useState} from "react";
-import { v4 as uuidv4 } from 'uuid';
+import { useState} from "react";
 
 
-const NewCard = ({id, name, img, type}) => {
+const NewCard = ({id, name, img, type, height, weight, ability, move}) => {
   
   
-  const newPokemonList = useContext(PokeContext);
-  const [showDetails, setShowDetails] = useState(false)
+  const [showDetails, setShowDetails] = useState(false);
 
-  const printDetails = () => newPokemonList.map(item => <Details type={item.type} height={item.height} weight={item.weight} ability={item.ability} move={item.move} key={uuidv4()}/>)
+  // const filteredDetails = newPokemonList.filter(item => item.id === id);
+
+  // const printDetails = () => newPokemonList.map(item => <Details type={item.type} height={item.height} weight={item.weight} ability={item.ability} move={item.move} key={uuidv4()}/>)
 
   const ToggleDetails = () => setShowDetails(!showDetails)
 
@@ -23,7 +21,16 @@ const NewCard = ({id, name, img, type}) => {
           </div>
           <img className="newPokeImg" src={img} alt="new pokemon picture" />
         </div>
-        {showDetails && printDetails()}
+        {showDetails &&   
+        <div className="card_info_content">
+          <div className={`poke_type type${type} `}>
+            Type {type} 
+          </div>
+          <p>Height: {height} </p>
+          <p>Weight: {weight} </p>
+          <p>Ability: {ability}</p>
+          <p>Move: {move} </p>
+        </div>}
     </article>
     );
 };

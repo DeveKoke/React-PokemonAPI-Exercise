@@ -7,7 +7,7 @@
 // }
 .pokeCard{
     border-radius: 13px;
-    border: solid $main-black 8px;
+    // border: solid $main-black 8px;
     margin: 01em;
     display: flex;
     flex-direction: column;
@@ -50,43 +50,43 @@ margin-bottom: 10px;
 }
 
 .normal{
-    border-color: $main-normaltype;
+    border: solid $main-normaltype 8px;
 }
 .grass{
-    border-color: $main-green;
+    border: solid $main-green 8px;
 }
 .fire{
-    border-color: $main-fire;
+    border: solid $main-fire 8px;
 }
 .water{
-    border-color: $main-dark-blue;
+    border: solid $main-dark-blue 8px;
 }
 .electric{
-    border-color: $main-yellow;
+    border: solid $main-yellow 8px;
 }
 .steel{
-    border-color: $main-steel;
+    border: solid $main-steel 8px;
 }
 .ice{
-    border-color: $main-light-blue;
+    border: solid $main-light-blue 8px;
 }
 .ground{
-    border-color: $main-brown;
+    border: solid $main-brown 8px;
 }
 .poison{
-    border-color: $main-purple;
+    border: solid $main-purple 8px;
 }
 .bug{
-    border-color: $main-oliveGreen;
+    border: solid $main-oliveGreen 8px;
 }
 .rock{
-    border-color: $main-grey;
+    border: solid $main-grey 8px;
 }
 .ghost{
-    border-color: $main-ghost-color;
+    border: solid $main-ghost-color 8px;
 }
 .fairy{
-    border-color: $secon-white-pink;
+    border: solid $secon-white-pink 8px;
 }
 
 .typenormal{

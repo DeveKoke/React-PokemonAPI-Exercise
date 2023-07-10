@@ -34,7 +34,7 @@ function Pokedex() {
       getPokeData();
     }
   }, [pokeName]);
-  // error.response &&
+ 
 
   useEffect(() =>{
     if(Object.keys(pokeData).length){
