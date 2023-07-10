@@ -6,8 +6,8 @@ const Footer = () => {
     <div className="followUs">
       <p>FOLLOW US</p>
       <div className="soc-med">
-          <img src="../src/assets/facebook.png" alt="facebook" />
-          <img src="../src/assets/twitter.png" alt="Twitter" />
+          <img src="assets/facebook.png" alt="facebook" />
+          <img src="assets/twitter.png" alt="Twitter" />
       </div>
     </div>
     <div className="comunity">

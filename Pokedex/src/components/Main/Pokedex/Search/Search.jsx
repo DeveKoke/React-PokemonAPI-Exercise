@@ -28,7 +28,7 @@ const Search = ({updatePokeName}) => {
   return( 
       <article className="findPokemon">
         <h1>POKEDEX</h1>
-      <img src="./src/assets/pokedex.png" alt="pokedex" className="pokedexIcon" />
+      <img src="assets/pokedex.png" alt="pokedex" className="pokedexIcon" />
         <h2>Find a POKEMON by name or number id</h2>
         <form onSubmit={handleSubmit}>
           <input type="text" name="pokename" value={inputValue} onChange={handleChange}/>

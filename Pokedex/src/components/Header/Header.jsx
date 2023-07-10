@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
   <header>
-    {isHome && <img src="./src/assets/pokeball.png" alt="pokeball" className="pokeballImg" />}    
+    {isHome && <img src="assets/pokeball.png" alt="pokeball" className="pokeballImg" />}    
     <Navbar />
   </header>
   );
